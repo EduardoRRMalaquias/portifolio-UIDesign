@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  max-width: 5ch;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .experiencia .subtitulo {
+    font-size: 2.5rem;
+  }
+}
